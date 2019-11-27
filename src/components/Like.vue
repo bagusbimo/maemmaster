@@ -1,8 +1,19 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+    <div id="app">
+        <div id="nav">
+            <router-link to="/landing">Home</router-link> |
+            <router-link to="/bookmark">Bookmark</router-link> |
+            <router-link to="">Liked</router-link>
+        </div>
+        <p>like</p>
+    </div>
 </template>
+
+<script>
+export default {
+    name: "Like"
+}
+</script>
 
 <style>
 #app {
